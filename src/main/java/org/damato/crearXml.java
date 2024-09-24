@@ -33,9 +33,9 @@ public class crearXml {
 
         File xmlFile = new File("./src/main/resources/productos.xml");
 
-        //generadorUno(productos, xmlFile);
+        generadorUno(productos, xmlFile);
 
-        leerXML(xmlFile);
+        //leerXML(xmlFile);
 
 
     }
@@ -44,6 +44,8 @@ public class crearXml {
         try {
 
             Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(xmlFile);
+
+
 
             //nomalizar xml
             document.getDocumentElement().normalize();
